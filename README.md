@@ -1,5 +1,8 @@
 # Wololang
 
+[![Build](https://img.shields.io/github/actions/workflow/status/jfrz38/wololang/build.yml)](https://github.com/jfrz38/wololang/actions/workflows/build.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jfrz38/wololang/blob/main/LICENSE)
+
 ![Wololo](https://static.wikia.nocookie.net/ageofempires/images/a/a1/Monk_sprite_aoe2de.png)
 
 [Wololang](https://static.wikia.nocookie.net/ageofempires/images/a/a1/Wololo.ogg) is a joke interpreter/toolchain for an Age of Empires II taunt-based esolang, powered by a Brainfuck-like VM.
