@@ -4,19 +4,26 @@
 
 [Wololang](https://static.wikia.nocookie.net/ageofempires/images/a/a1/Wololo.ogg) is a joke interpreter/toolchain for an Age of Empires II taunt-based esolang, powered by a Brainfuck-like VM.
 
-Yes, it can transpile to Brainfuck. No, you should not use it. Wololo.
+Yes, it can transpile to Brainfuck. No, you should not use it.
 
-## Install
+## Local Usage
 
-```bash
-npm install -g wololang
-```
-
-During development:
+Wololang is not published to npm. Use it from a local checkout.
 
 ```bash
 pnpm install
-pnpm dev -- run examples/hello.wolo
+pnpm build
+pnpm add -g .
+wololo run examples/hello-aoe.wolo # Output: Hello AoE! 14!
+```
+
+`pnpm add -g .` exposes the local CLI as `wololo` globally on your machine. Re-run `pnpm build` after changing the TypeScript sources.
+
+During development, you can skip the global link and run the CLI through `tsx`:
+
+```bash
+pnpm install
+pnpm dev run examples/hello.wolo # Output: gg
 ```
 
 ## Quick Start
