@@ -1,0 +1,37 @@
+{
+  "name": "wololang",
+  "version": "0.1.0",
+  "description": "An Age of Empires II taunt-based esoteric programming language powered by a Brainfuck-like VM.",
+  "type": "module",
+  "packageManager": "pnpm@11.1.3",
+  "bin": {
+    "wololo": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "test": "vitest run",
+    "prepublishOnly": "pnpm run test && pnpm run build"
+  },
+  "keywords": [
+    "esolang",
+    "brainfuck",
+    "age-of-empires",
+    "taunts",
+    "wololo"
+  ],
+  "author": "José F. Ruiz",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "22.19.21",
+    "tsx": "4.22.4",
+    "typescript": "6.0.3",
+    "vitest": "4.1.8"
+  }
+}
