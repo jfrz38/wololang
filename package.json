@@ -1,6 +1,6 @@
 {
   "name": "wololang",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An Age of Empires II taunt-based esoteric programming language powered by a Brainfuck-like VM.",
   "type": "module",
   "packageManager": "pnpm@11.1.3",
